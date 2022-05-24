@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Teko:wght@300;500&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Teko:wght@300;500&display=swap" rel="stylesheet">
 </head>
 <body>
     <main>
@@ -52,18 +52,18 @@
                     <div class="peca">
                         <label for="" class="peca-titulo">Braços</label>
                         <div class="controle">
-                            <buttom class="controle-ajuste">-</buttom>
-                            <input type="text" class="controle-contador" value="00">
-                            <buttom class="controle-ajuste">+</buttom>
+                            <buttom id="diminui-bracos" class="controle-ajuste">-</buttom>
+                            <input id="bracos" type="text" class="controle-contador" value="00">
+                            <buttom id="aumenta-bracos" class="controle-ajuste">+</buttom>
                         </div>
                     </div>
                     <hr class="linha">
                     <div class="peca">
                         <label for="" class="peca-titulo">Blindagem</label>
                         <div class="controle">
-                            <buttom class="controle-ajuste">-</buttom>
+                            <buttom id="aumenta-blindagem" class="controle-ajuste">-</buttom>
                             <input type="text" class="controle-contador" value="00">
-                            <buttom class="controle-ajuste">+</buttom>
+                            <buttom id="diminui-blindagem" class="controle-ajuste">+</buttom>
                         </div>
                     </div>
                     <hr class="linha">
@@ -72,7 +72,7 @@
                         <div class="controle">
                             <buttom class="controle-ajuste">-</buttom>
                             <input type="text" class="controle-contador" value="00">
-                            <buttom class="controle-ajuste">+</buttom>
+                            <buttom id=aumenta-bracos class="controle-ajuste">+</buttom>
                         </div>
                     </div>
                     <hr class="linha">
@@ -81,22 +81,24 @@
                         <div class="controle">
                             <buttom class="controle-ajuste">-</buttom>
                             <input type="text" class="controle-contador" value="00">
-                            <buttom class="controle-ajuste">+</buttom>
+                            <buttom id=aumenta-bracos class="controle-ajuste">+</buttom>
                         </div>
                     </div>
                     <hr class="linha">
                     <div class="peca">
                         <label for="" class="peca-titulo">Foguetes</label>
                         <div class="controle">
-                            <buttom class="controle-ajuste">-</buttom>
+                            <buttom id="botaoDiminuiBracos" class="controle-ajuste">-</buttom>
                             <input type="text" class="controle-contador" value="00">
-                            <buttom class="controle-ajuste">+</buttom>
+                            <buttom id=aumenta-bracos class="controle-ajuste">+</buttom>
                         </div>
                     </div>
                 </div>
                 <input type="submit" value="Iniciar produção" class="producao" id="producao">
+                <input type="submit" value="Mudar cor" class="producao" id="Mudar cor">
             </form>
         </section>
     </main>
+    <script src="javascript.js"></script>
 </body>
 </html>
