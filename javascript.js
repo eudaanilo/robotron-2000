@@ -72,4 +72,22 @@ botaoDiminuiPernas.addEventListener('click', function () {
         pernas.value = `0${--pernas.value}`
     }
 })
-    
+
+
+
+//NÃO CONSEGUI FAZER ESSE DE TROCAR A IMAGEM
+
+
+var imagemAtual = "img\robotron.png";
+var imagemAnterior = "img\robotron-branco.png";
+
+
+function trocarImagem(){
+    document.getElementById("robo").src = "robotron.png";
+    let aux = imagemAtual;
+    imagemAtual = imagemAnterior;
+    imagemAnterior = aux;
+}
+
+
+ 
