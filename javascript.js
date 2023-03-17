@@ -72,3 +72,4 @@ botaoDiminuiPernas.addEventListener('click', function () {
         pernas.value = `0${--pernas.value}`
     }
 })
+    
