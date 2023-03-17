@@ -15,9 +15,9 @@
 <body>
     <main>
         <section class="robotron">
-            <img class="robo" src="img/robotron.png" alt="Robotron">
+            <img class="robo" src="img/robotron.png" alt="Robotron" id="imgRobo">
             <figcaption class="titulo">ROBOTRON <br>2000</figcaption>
-        </section>
+        </section> 
         <section class="box estatisticas">
             <div class="estatistica">
                 <p class="estatistica-titulo">Força</p>
@@ -85,7 +85,10 @@
                     </div>
                 </div>
                 <input type="submit" value="Iniciar produção" class="producao" id="producao">
-                <buttom onclick="trocarImagem()" class="producao">MUDAR COR</buttom>
+                <div class="div-buttom">
+                    <button id="botaoVolta" class="botaoStyle" type="button" onclick="trocaImgVolta()"> <b> <<< </b></button>
+                    <button id="botaoIr" class="botaoStyle" type="button" onclick="trocaImgIr()"> <b> >>> </b> </button>
+                </div>
             </form>
         </section>
     </main>

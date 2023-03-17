@@ -73,21 +73,27 @@ botaoDiminuiPernas.addEventListener('click', function () {
     }
 })
 
+        
+var listRobo = ["img/robotron-azul.png", "img/robotron-vermelho.png", "img/robotron-branco.png", "img/robotron-preto.png", "img/robotron-rosa.png", "img/robotron-amarelo.png"];
 
+var cont = 0;
 
-//NÃO CONSEGUI FAZER ESSE DE TROCAR A IMAGEM
+function trocaImgIr(){
+    cont = cont+1;            
 
+    if(cont>=5){
+        cont = 5;
+    }
 
-var imagemAtual = "img\robotron.png";
-var imagemAnterior = "img\robotron-branco.png";
-
-
-function trocarImagem(){
-    document.getElementById("robo").src = "robotron.png";
-    let aux = imagemAtual;
-    imagemAtual = imagemAnterior;
-    imagemAnterior = aux;
+    document.getElementById("imgRobo").src= listRobo[cont];  
 }
 
+function trocaImgVolta(){
+    cont = cont-1;            
 
- 
+    if(cont < 1){
+        cont = 0;
+    }
+
+    document.getElementById("imgRobo").src= listRobo[cont];  
+}
